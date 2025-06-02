@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Discord webhook tool</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='app.js' defer></script>
+</head>
+<body>
+    <main>
+        <div class="contaner">
+            <h1>webhook tool</h1>
+
+            <div class="webhook-profile">
+                <center id="webhook-pfp">
+                    
+                </center>
+                <h2 class="name" id="name">webhook name</h2>
+            </div>
+            
+            <div class="input">
+
+                <div class="webhook-input">
+                    <label for="webhookUrl" class="line-down">webhook url</label>
+                    <input type="password" placeholder="webhook url" name="webhook" required id="webhookToken">
+                </div>
+
+                <hr>
+
+                <div class="content">
+                    <label for="content" class="line-down">content</label>
+                    <input type="text" placeholder="content" id="content">
+                </div>
+
+            </div>
+
+            <div class="buttons">
+                <button id="sendMessage" name="webhook" onclick="sendBtn()">
+                    send
+                </button>
+                <button id="resetMessage" onclick="resetBtn()">
+                    reset
+                </button>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>
